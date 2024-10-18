@@ -34,7 +34,7 @@ Future<void> main() async {
       print('Gas prices fetched successfully: $value');
       teledart.sendMessage(
         "@gastestp",
-        '🚥Ethereum Gas Prices\n🛴Safe: ${value['low']}\n🚗Proposed: ${value['average']}\n🏎Fast: ${value['high']}',
+        '🛴Safe: ${value['low']}\n🚗Proposed: ${value['average']}\n🏎Fast: ${value['high']}',
       );
       print('Gas prices message sent to @gastestp');
     }, onError: (e) {
